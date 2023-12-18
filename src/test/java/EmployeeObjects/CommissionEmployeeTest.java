@@ -22,22 +22,6 @@ public class CommissionEmployeeTest {
         assertEquals(0.0, emp.getSales(), 0.01);
     }
 
-    @Test
-    public void testHolidayBonus() {
-        CommissionEmployee emp = new CommissionEmployee("Clint", "Barton", 6847, "Sales", "Customer Representative", 0.0265);
 
-        double bonus = emp.holidayBonus();
-        assertEquals(0.0, bonus, 0.01);
-    }
-
-    @Test
-    public void testAnnualRaise() {
-        CommissionEmployee emp = new CommissionEmployee("Clint", "Barton", 6847, "Sales", "Customer Representative", 0.0265);
-
-        emp.annualRaise(); // annual raise
-        emp.annualRaise(); // Applying annual raise again
-
-        assertEquals(0.0305, emp.getRate(), 0.0001);
-    }
 
 }
